@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <h1 class="head">Welcome to <span class="album">Gallery</span></h1>
+    <img class="logo" src="https://i0.wp.com/sociallover.net/wp-content/uploads/2017/08/welcome-images.jpg">
+</head>
+<body class="back">
+    
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="https://wallpapercave.com/wp/wp6893154.jpg"class="gallery-image" onclick="openModal(0)">
+            <img src="https://images.hdqwalls.com/wallpapers/cute-girl-blonde-hairs-1p.jpg" class="gallery-image"onclick="openModal(1)" >
+            <img src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg" class="gallery-image"onclick="openModal(2)">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/09/Best-Beautiful-Images-For-Desktop-Nature.png" class="gallery-image"onclick="openModal(3)">
+            <img src="https://getwallpapers.com/wallpaper/full/5/c/5/459617.jpg" class="gallery-image"onclick="openModal(4)">
+            <img src="https://wallpaperaccess.com/full/807798.jpg" class="gallery-image"onclick="openModal(5)">
+            <img src="http://2.bp.blogspot.com/-_dSKo-fJCV8/UocUKtdG59I/AAAAAAAABqk/gpMygrmXqkU/s1600/cartoon+wallpapers+6.jpg" class="gallery-image" onclick="openModal(6)">
+            <img src="https://wallpapers.com/images/hd/shin-chan-cartoon-family-and-friends-s9jxc1n1maplw49t.jpg" class="gallery-image" onclick="openModal(7)">
+        </div>    
+        <div>
+            <img src="https://wallpaperaccess.com/full/374467.jpg" class="gallery-image" onclick="openModal(8)">
+            <img src="http://www.zastavki.com/pictures/1600x1200/2009/International_Womens_Day_Beautiful_flowers_on_March_8_014509_.jpg" class="gallery-image" onclick="openModal(9)">
+            <img src="https://media.istockphoto.com/id/175454330/photo/hindu-god-krishna.jpg?s=612x612&w=0&k=20&c=dXCyaWomjyqvtjKgOyV7fuaXdxZKHkE79AoljTBa_Hc=" class="gallery-image" onclick="openModal(10)">
+            <img src="https://static.vecteezy.com/system/resources/previews/022/257/312/non_2x/rose-flower-pictures-beautiful-roses-love-rose-flower-beautiful-flowers-wallpapers-ai-generated-free-photo.jpg" class="gallery-image" onclick="openModal(11)">
+        </div>
+        <div>
+            <img src="https://img.freepik.com/premium-photo/drawing-cartoon-man-pencil-with-pencil-him_1272865-11532.jpg" class="gallery-image" onclick="openModal(12)">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/032/914/118/small_2x/imaginative-astronomer-child-starry-sky-night-generate-ai-photo.jpg" class="gallery-image" onclick="openModal(13)">
+        </div>
+    </div>
+
+    <!-- Modal for large image view -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
